@@ -9,8 +9,24 @@
       margin: 20px;
       line-height: 1.6;
     }
-    h1, h2 {
-      color: #2c3e50;
+    header {
+      background: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    nav {
+      margin: 15px 0;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      margin-bottom: 40px;
     }
     article {
       margin-bottom: 20px;
@@ -19,64 +35,68 @@
       border-radius: 5px;
       background: #f9f9f9;
     }
-    pre {
-      background: #272822;
-      color: #f8f8f2;
+    footer {
+      text-align: center;
+      margin-top: 30px;
       padding: 15px;
-      border-radius: 5px;
-      overflow-x: auto;
+      background: #333;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <h1>Bienvenido a mi Blog de Rugby</h1>
-  <p>Este blog incluye resúmenes de partidos y un apartado de "About Us".</p>
+  <header>
+    <h1>Bienvenido a mi Blog de Rugby</h1>
+    <p>Resúmenes de partidos y una sección sobre mí</p>
+  </header>
 
-  <h2>📘 Resúmenes de Partidos</h2>
+  <nav>
+    <a href="#blog">Blog</a>
+    <a href="#about">About Us</a>
+  </nav>
 
-  <article>
-    <h3>Australia vs Argentina</h3>
+  <!-- Sección Blog -->
+  <section id="blog">
+    <h2>📘 Resúmenes de Partidos</h2>
+
+    <article>
+      <h3>Australia vs Argentina</h3>
+      <p>
+        En un partido muy parejo, Argentina logró imponerse ante Australia con una defensa sólida
+        y un ataque efectivo en los últimos minutos. El trabajo en equipo fue clave para conseguir la victoria.
+      </p>
+    </article>
+
+    <article>
+      <h3>All Blacks vs Argentina</h3>
+      <p>
+        Frente a uno de los equipos más fuertes del mundo, Argentina mostró disciplina y resistencia.
+        Aunque el marcador favoreció a los All Blacks, los Pumas dejaron una gran impresión por su esfuerzo
+        y organización defensiva.
+      </p>
+    </article>
+
+    <article>
+      <h3>Argentina vs Uruguay</h3>
+      <p>
+        En el clásico rioplatense, Argentina se impuso con claridad frente a Uruguay.
+        El dominio del scrum y la velocidad en los tres cuartos marcaron la diferencia a favor de los Pumas.
+      </p>
+    </article>
+  </section>
+
+  <!-- Sección About Us -->
+  <section id="about">
+    <h2>👤 About Us</h2>
     <p>
-      En un partido muy parejo, Argentina logró imponerse ante Australia con una defensa sólida
-      y un ataque efectivo en los últimos minutos. El trabajo en equipo fue clave para conseguir la victoria.
+      Soy Iván Baumgart Moran, tengo 17 años. Juego al rugby hace 3 años en el Club Italiano.
+      Voy al gimnasio y también voy a inglés particular.
     </p>
-  </article>
+  </section>
 
-  <article>
-    <h3>All Blacks vs Argentina</h3>
-    <p>
-      Frente a uno de los equipos más fuertes del mundo, Argentina mostró disciplina y resistencia.
-      Aunque el marcador favoreció a los All Blacks, los Pumas dejaron una gran impresión por su esfuerzo
-      y organización defensiva.
-    </p>
-  </article>
-
-  <article>
-    <h3>Argentina vs Uruguay</h3>
-    <p>
-      En el clásico rioplatense, Argentina se impuso con claridad frente a Uruguay.
-      El dominio del scrum y la velocidad en los tres cuartos marcaron la diferencia a favor de los Pumas.
-    </p>
-  </article>
-
-  <h2>👤 About Us (Código HTML)</h2>
-  <p>Este es el código HTML de mi sección "About Us":</p>
-
-  <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="es"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;title&gt;About Us&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1&gt;Sobre mí&lt;/h1&gt;
-  &lt;p&gt;Soy Iván Baumgart Moran, tengo 17 años.&lt;/p&gt;
-  &lt;p&gt;Juego al rugby hace 3 años en el Club Italiano.&lt;/p&gt;
-  &lt;p&gt;Voy al gimnasio y también voy a inglés particular.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-  </pre>
-
+  <footer>
+    <p>Hecho por Iván Baumgart Moran © 2025</p>
+  </footer>
 </body>
 </html>
+
