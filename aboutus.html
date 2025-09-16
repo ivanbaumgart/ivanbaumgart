@@ -1,59 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>About Us</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog de Los Pumas - Iván Baumgart Morán</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e3f2fd; /* Celeste claro */
+      color: #0d47a1; /* Azul oscuro */
+    }
+
+    header {
+      background: linear-gradient(to right, #ffffff, #bbdefb); /* Blanco a celeste */
+      text-align: center;
+      padding: 30px 20px;
+      border-bottom: 4px solid #64b5f6;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .presentacion {
+      text-align: center;
+      padding: 20px;
+      background-color: #cfe8fc;
+      font-size: 1.2em;
+    }
+
+    .blog-posts {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .post {
+      background-color: #ffffff;
+      border-left: 6px solid #0288d1;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .post h2 {
+      margin-top: 0;
+      color: #01579b;
+    }
+
+    .post p {
+      color: #333;
       line-height: 1.6;
     }
-    header {
-      background: #333;
-      color: white;
-      padding: 15px;
+
+    .boton-isgro {
       text-align: center;
+      margin: 40px 0;
     }
-    nav {
-      margin: 15px 0;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
+
+    .boton-isgro a {
       text-decoration: none;
-      color: #333;
+      background-color: #0288d1;
+      color: #ffffff;
+      padding: 12px 24px;
       font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
     }
+
+    .boton-isgro a:hover {
+      background-color: #0277bd;
+    }
+
     footer {
+      background-color: #bbdefb;
       text-align: center;
-      margin-top: 30px;
       padding: 15px;
-      background: #333;
-      color: white;
+      color: #01579b;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>About Us</h1>
+    <h1>Blog de Los Pumas</h1>
   </header>
 
-  <nav>
-    <a href="index.html">Blog</a>
-    <a href="about.html">About Us</a>
-  </nav>
-
-  <section>
-    <h2>👤 Sobre mí</h2>
-    <p>
-      Soy Iván Baumgart Moran, tengo 17 años. Juego al rugby hace 3 años en el Club Italiano.
-      Voy al gimnasio y también voy a inglés particular.
-    </p>
+  <section class="presentacion">
+    <p>Hola, soy <strong>Iván Baumgart Morán</strong>, tengo 17 años y este es mi blog sobre Los Pumas y el rugby argentino 🏉🇦🇷</p>
   </section>
 
+  <section class="blog-posts">
+    <div class="post">
+      <h2>🐾 Historia de Los Pumas</h2>
+      <p>Los Pumas representan a la selección nacional de rugby de Argentina. Desde su debut internacional en 1910, el equipo ha crecido hasta convertirse en una potencia mundial, destacando en mundiales y torneos como el Rugby Championship.</p>
+    </div>
+
+    <div class="post">
+      <h2>💪 Juego con garra y corazón</h2>
+      <p>El estilo de juego argentino es aguerrido, técnico y físico. La defensa fuerte, el scrum sólido y la pasión por la camiseta hacen de Los Pumas un equipo respetado en todo el mundo del rugby.</p>
+    </div>
+
+    <div class="post">
+      <h2>🌍 Logros internacionales</h2>
+      <p>Argentina alcanzó el tercer puesto en el Mundial 2007, y ha logrado victorias históricas contra gigantes como Nueva Zelanda, Australia y Sudáfrica. El equipo sigue creciendo con nuevas generaciones de talentos.</p>
+    </div>
+  </section>
+
+  <div class="boton-isgro">
+    <a href="isgro.html">Ir al Blog de Isgró →</a>
+  </div>
+
   <footer>
-    <p>Hecho por Iván Baumgart Moran © 2025</p>
+    <p>© 2025 - Iván Baumgart Morán | Rugby con alma argentina 🇦🇷</p>
   </footer>
+
 </body>
 </html>
+
